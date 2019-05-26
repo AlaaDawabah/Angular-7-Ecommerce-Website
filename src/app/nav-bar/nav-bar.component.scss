@@ -1,0 +1,44 @@
+@import "../../assets/style/variables";
+// .navbar{
+//     margin-bottom: 150px;
+// }
+.navbar {
+  
+  li a,
+  i {
+    color: $primaryColor;
+
+    font-size: 18px;
+  }
+  a:hover {
+    transform: scale(1.1);
+    transition: all 0.2s ease-in-out;
+  }
+  .nav-link i {
+    font-size: 15px;
+  }
+  .btn-outline-primary{
+    border: none;
+    margin-bottom: 10px;
+  }
+  .mr-auto i{
+    font-size: 60px;
+  }
+}
+.nav-colored {
+  background: $primaryColor;
+  transition: background 0.5s ease-in-out;
+
+  li a,
+  i {
+    color: $whiteColor;
+  }
+  li.active a {
+    // background-color: $whiteColor;
+    // color: $primaryColor;
+  }
+}
+.btn-outline-primary {
+  background-color: $whiteColor;
+  color: $primaryColor;
+}

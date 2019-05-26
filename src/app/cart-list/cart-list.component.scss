@@ -1,0 +1,16 @@
+@import "../../assets/style/mixins";
+@import "../../assets/style/variables";
+
+.container{
+  @extend %margin;
+}
+
+.btn {
+  @include Button($primaryColor, 10px, 10px 30px, $whiteColor);
+  .btn-success:hover {
+    @include Button(rgb(34, 79, 83), transparent, 10px 30px, $whiteColor);
+  }
+  .btn-danger:hover{
+    @include Button(rgb(168, 33, 15), transparent, 10px 30px, $whiteColor);
+  }
+}

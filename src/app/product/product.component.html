@@ -1,0 +1,52 @@
+<div class="container">
+    <input type="text" [(ngModel)]="searchWord" placeholder="search text goes here">
+    <div class="row">
+        <div *ngIf="searchWord; else product">
+            <div class=" col-md-6 offset-3 text-center text-md-left"
+                *ngFor="let product of products | search: searchWord">
+                <div>
+                    <div class="hovereffect">
+                        <div class="card mb-4" (click)=productDetails(product)>
+                            <img class="card-img-top img-fluid" [src]="product['Product-Img']" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Product-Name:</h5> {{product['Product-Name']}}
+                                <h5 class="card-text">Product-Price:</h5> ${{product['Product-Price']}}
+                                <h5 class="card-text">Product-Category:</h5> {{product['Product-Category']}}
+                            </div>
+                            <div class="overlay">
+                                <p class="icon-links">
+                                    <a href="#">
+                                        <button class="btn" (click)='AddToCart(product,$event)'>ADD TO CART</button>
+                                    </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div></div> -->
+        <ng-template #product>
+            <div class="col-lg-4 col-md-6 col-12 text-center text-md-left"
+                *ngFor="let product of products">
+                <div>
+                    <div class="hovereffect">
+                        <div class="card mb-4" (click)=productDetails(product)>
+                            <img class="card-img-top img-fluid" [src]="product['Product-Img']" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Product-Name:</h5> {{product['Product-Name']}}
+                                <h5 class="card-text">Product-Price:</h5> ${{product['Product-Price']}}
+                                <h5 class="card-text">Product-Category:</h5> {{product['Product-Category']}}
+                            </div>
+                            <div class="overlay">
+                                <p class="icon-links">
+                                    <a href="#">
+                                        <button class="btn" (click)='AddToCart(product,$event)'>ADD TO CART</button>
+                                    </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </ng-template>
+    </div>
+</div>

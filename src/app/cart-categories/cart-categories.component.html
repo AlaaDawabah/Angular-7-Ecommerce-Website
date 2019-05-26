@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="row">
+      <div class="col-lg-4 col-md-6 col-12 text-center text-md-left" *ngFor="let product of products">
+          <div class="card mb-4" (click)="cardDetails()">
+              <img class="card-img-top img-fluid" [src]="product['Product-Img']" alt="Card image cap">
+              <div class="card-body">
+                  <h6 class="card-title">Product-Name: {{product['Product-Name']}}</h6>
+                  <h6 class="card-text">Product-Price: {{product['Product-Price']}}</h6>
+                  <h6 class="card-text">Product-Category: {{product['Product-Category']}}</h6>
+                  <button class="btn" (click)='AddToCart(product,$event)'>ADD TO CART</button>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>

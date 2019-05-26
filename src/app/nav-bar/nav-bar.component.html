@@ -1,0 +1,44 @@
+<nav class="navbar navbar-expand-lg fixed-top" id="nav">
+  <div class="container">
+    <ul class="mr-auto">
+
+      <i class="fab fa-affiliatetheme"></i>
+
+    </ul>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" routerLink = "/" routerLinkActive="active">HOME <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink = "/categories" routerLinkActive="active">
+          <div class="row">
+            <div class="col">
+              <div ngbDropdown class="d-inline-block">
+                <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>CATEGORIES</button>
+                <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                  <button ngbDropdownItem (click)='setView($event)' >WATCHES</button>
+                  <button ngbDropdownItem (click)='setView($event)' >SunGlasses</button>
+                  <button ngbDropdownItem (click)='setView($event)'>ACCESSORIES</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/cart" routerLinkActive="active">CART <i class="fab fa-opencart"></i> {{count}}</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link"routerLink="/sign in"  routerLinkActive="active">SignIN</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- this.cartdata.push(product);
+this.categoryArry.next(this.cartdata); -->
