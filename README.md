@@ -2,26 +2,30 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.7.
 
-## Development server
+////////////////////  HOME  ///////////////////
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+* you can SEARCH for special product by its NAME or Category
 
-## Code scaffolding
+* will display all products from database
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+* Hover on the product to be able to add it to cart
 
-## Build
+* the product can be clicked only one time from home 
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+///////////////////  CATEGORIES  //////////////
 
-## Running unit tests
+* you can filter the products according to their categories fron categories dropdown menu on navigation bar
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+/////////////////// CART ////////////////////
 
-## Running end-to-end tests
+* the cart in the navigation bar will keep track og=f number of products you've added to cart 
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+* to see the products you have added to cart ClICK on the cart link from navigation bar 
 
-## Further help
+* From there, you can increase, decrease, and remove them from cart page
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+///////////////  CART DETAILS ////////////////
+
+* To see cart details CLICK on the card 
+
+
