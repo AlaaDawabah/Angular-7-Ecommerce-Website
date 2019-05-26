@@ -1,0 +1,10 @@
+@mixin Button ($buttonBackgroundColor, $buttonBorder, $buttonPadding, $buttonColor ) {
+    background-color: $buttonBackgroundColor;
+    border: $buttonBorder;
+    padding: $buttonPadding;
+    color: $buttonColor ;
+}
+
+%margin{
+    margin-top: 80px;
+}
